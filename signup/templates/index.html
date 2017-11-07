@@ -3,10 +3,11 @@
 <head>
 </head>
 <body>
-  <form method="POST" action="">
+  <!-- <form method="POST" action="{% url 'signup' %}"> -->
+  <form method="POST" >
     {% csrf_token %}
-    {{ form1.as_p }}
-    <p>HELLO WORLD</p>
+    {{ form.as_p }}
+    <button type="submit">Login</button>
   </form>
 
 </body>

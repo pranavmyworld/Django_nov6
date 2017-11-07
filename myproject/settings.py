@@ -127,3 +127,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 TEMP1 = os.path.join(BASE_DIR,'static/')
 STATICFILES_DIR = [TEMP1,]
+
+LOGIN_REDIRECT_URL = '/'

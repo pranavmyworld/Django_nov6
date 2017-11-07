@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 #from . import views.signup_basic
 from views import signup_basic
+from django.contrib.auth.views import login,logout
+
 
 urlpatterns = [
     url(r'^$', signup_basic, name='signup'),
-
+    #url(r'^login/$', auth_views.login, name='nlogin'),
+    url(r'^login/$',login, name='nlogin'),
+    url(r'^logout/$',logout, name='nlogin'),
 ]
